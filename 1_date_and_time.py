@@ -30,4 +30,4 @@ def str_2_datetime(date_string):
 
 if __name__ == "__main__":
     print_days()
-    print(str_2_datetime("01/01/20 12:10:03.234567"))
+    str_2_datetime("01/01/20 12:10:03.234567")

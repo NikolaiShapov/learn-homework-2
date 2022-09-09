@@ -11,7 +11,7 @@
 """
 import csv
 
-BaseUser = [{'name': 'Маша', 'age': 25, 'job': 'Scientist'},
+base_user = [{'name': 'Маша', 'age': 25, 'job': 'Scientist'},
             {'name': 'Вася', 'age': 8, 'job': 'Programmer'},
             {'name': 'Эдуард', 'age': 48, 'job': 'Big boss'},
             {'name': 'Оля', 'age': 41, 'job': 'Doctor'},
@@ -22,7 +22,7 @@ def main():
         fields = ['name', 'age', 'job']
         writer = csv.DictWriter(f, fields, delimiter=';')
         writer.writeheader()
-        for user in BaseUser:
+        for user in base_user:
             writer.writerow(user)
         print('Файл export.csv сохранен, проверяй ;)!')
 
